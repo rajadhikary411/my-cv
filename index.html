@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated CV - Raj Adhikary</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  animation: bounce 2s infinite, glow 5s infinite;
+  border: 4px solid transparent;
+  box-shadow: 0 0 15px 4px rgba(79, 70, 229, 0.6);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 15px 4px #ff6ec4;
+  }
+  25% {
+    box-shadow: 0 0 15px 4px #7879f1;
+  }
+  50% {
+    box-shadow: 0 0 15px 4px #6ee7b7;
+  }
+  75% {
+    box-shadow: 0 0 15px 4px #facc15;
+  }
+  100% {
+    box-shadow: 0 0 15px 4px #ff6ec4;
+  }
+}
+
+
+    h1 {
+      font-size: 28px;
+      color: #4f46e5;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .letter {
+      display: inline-block;
+      animation: wave 1.5s infinite;
+    }
+
+    .letter:nth-child(1) { animation-delay: 0s; }
+    .letter:nth-child(2) { animation-delay: 0.1s; }
+    .letter:nth-child(3) { animation-delay: 0.2s; }
+    .letter:nth-child(4) { animation-delay: 0.3s; }
+    .letter:nth-child(5) { animation-delay: 0.4s; }
+    .letter:nth-child(6) { animation-delay: 0.5s; }
+    .letter:nth-child(7) { animation-delay: 0.6s; }
+    .letter:nth-child(8) { animation-delay: 0.7s; }
+    .letter:nth-child(9) { animation-delay: 0.8s; }
+    .letter:nth-child(10) { animation-delay: 0.9s; }
+    .letter:nth-child(11) { animation-delay: 1.0s; }
+
+    @keyframes wave {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+      animation: fadeInUp 0.8s ease-in-out both;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section h2 {
+      font-size: 20px;
+      color: #4f46e5;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills li {
+      background-color: #e0e7ff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .education-logo {
+      width: 30px;
+      height: auto;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #888;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+        
+      <img src="h.jpg" alt="Profile Photo" class="profile-img" />
+      <h1>
+        <span class="letter">R</span>
+        <span class="letter">a</span>
+        <span class="letter">j</span>
+        <span class="letter"> </span>
+        <span class="letter">A</span>
+        <span class="letter">d</span>
+        <span class="letter">h</span>
+        <span class="letter">i</span>
+        <span class="letter">k</span>
+        <span class="letter">a</span>
+        <span class="letter">r</span>
+        <span class="letter">y</span>
+      </h1>
+      <p>Frontend Developer | CSE Student | Atypon</p>
+    </div>
+
+    <div class="section">
+      <h2 class="wave-text">Contact Information</h2>
+      <ul>
+        <li><strong>Email:</strong> rajadhikary149@gmail.com</li>
+        <li><strong>Phone:</strong> +8801706279977</li>
+        <li><strong>Location:</strong> Jessore, Bangladesh</li>
+        <li><strong>GitHub:</strong> github.com/rajadhikary</li>
+        <li><strong>LinkedIn:</strong> linkedin.com/in/rajadhikary</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="wave-text">About Me</h2>
+      <p>I am a 4th-year CSE student at JUST and a passionate frontend developer. I enjoy building user-friendly and responsive web interfaces.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="wave-text">Skills</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3 / Tailwind</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Git & GitHub</li>
+        <li>API Integration</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="wave-text">Education</h2>
+      <p><strong>Jessore University of Science and Technology</strong>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Jashore_University_of_Science_and_Technology_logo.svg/1200px-Jashore_University_of_Science_and_Technology_logo.svg.png" alt="JUST Logo" class="education-logo" />
+        <br />B.Sc. in Computer Science & Engineering<br />2021 - Present</p>
+    </div>
+
+    <div class="section">
+      <h2 class="wave-text">Projects</h2>
+      <ul>
+        <li>🧵 Online Tailor System</li>
+        <li>📦 E-commerce Interior Design Website</li>
+        <li>🌐 Agency Website (Portfolio)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="wave-text">Languages</h2>
+      <ul>
+        <li>Bangla (Native)</li>
+        <li>English (Professional)</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Raj Adhikary</p>
+  </footer>
+  <script>
+  document.querySelectorAll('.wave-text').forEach(el => {
+    const text = el.textContent;
+    el.innerHTML = '';
+    text.split('').forEach((char, i) => {
+      const span = document.createElement('span');
+      span.className = 'letter';
+      span.style.animationDelay = `${i * 0.1}s`;
+      span.textContent = char;
+      el.appendChild(span);
+    });
+  });
+</script>
+
+</body>
+</html>
